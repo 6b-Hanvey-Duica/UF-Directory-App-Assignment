@@ -6,9 +6,9 @@ var mongoose = require('mongoose'),
 var listingSchema = new Schema({
   code: {type: String, required: true},
   name: {type: String, required: true},
-  coordinates: {
-    latitude: Number,
-    longitutde: Number
+  coordinates:{
+    latitude: {type: Number},
+    longitude: {type: Number}
   },
   address: String
 });
